@@ -1,1 +1,8 @@
-Hello World
+<div class="container">
+    <button (click)="toggleVisibility()">Toggle Animation</button>
+  
+    <div @bounceAndRotate *ngIf="isVisible" class="animated-element">
+      <h1>Bienvenue !</h1>
+      <p>Ceci est une animation impressionnante.</p>
+    </div>
+  </div>

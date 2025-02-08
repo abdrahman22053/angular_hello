@@ -1,0 +1,55 @@
+/* Conteneur principal pour centrer le contenu */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Bouton stylisé */
+  button {
+    padding: 10px 20px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  button:hover {
+    background: #2575fc;
+  }
+  
+  /* Élément animé */
+  .animated-element {
+    padding: 40px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    border-radius: 20px;
+    width: 90%; /* Largeur relative */
+    max-width: 500px; /* Largeur maximale */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive pour les petits écrans */
+  @media (max-width: 600px) {
+    .animated-element {
+      padding: 20px;
+      width: 100%; /* Prend toute la largeur sur les petits écrans */
+    }
+  
+    h1 {
+      font-size: 24px; /* Taille de police réduite */
+    }
+  
+    p {
+      font-size: 16px; /* Taille de police réduite */
+    }
+  }
